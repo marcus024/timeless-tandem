@@ -1,0 +1,107 @@
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 300px;
+    object-fit: contain;
+    filter: blur(1px) brightness(1.2);
+    z-index: -2;
+    padding-bottom: 20px;
+    
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    padding: 0 20px;
+    /* background: rgba(255, 255, 255, 0.276);  */
+    z-index: -1;
+}
+
+.home-landingpage {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    height: 3000px;
+    padding: 0 70px;
+    color: black;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+.home-landingpage img {
+    align-self: flex-start;
+    margin-bottom: 10px; /* Adjusted spacing */
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.timeless {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.d {
+    font-size: 30px;
+    text-align: left;
+    margin-left:15px;
+    padding: 0;
+}
+
+.home-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 300px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-left:20px;
+}
+
+.home-btn i {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 30px;
+}
+
+.home-btn i::before {
+    content: '>'; /* Forward icon */
+    font-size: 30px;
+    color: black;
+    line-height: 20px;
+    display: inline-block;
+    margin-top:16px;
+}

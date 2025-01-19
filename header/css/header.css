@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../../images/background-h.png'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Makes the background static while scrolling */
+    color: #000;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('../../images/background-h.png');
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.title-section {
+    flex: 0 1 auto;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 160px;
+}
+
+.title-section p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.title-section p:first-child {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.title-section p:nth-child(2) {
+    font-size: 6px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    position: relative; /* Ensure underline stays within the item */
+    padding: 8px 0;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #000;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    left: 0; /* Start the underline from the left of the link */
+    bottom: 0; /* Place the underline right below the text */
+}
+
+.navbar a:hover::after {
+    width: 100%; /* Underline expands fully for the hovered item */
+}
+
+main {
+    padding-top: 160px; /* Ensures content doesn't overlap with the header */
+}
+
+main p {
+    font-size: 18px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
