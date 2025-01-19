@@ -1,0 +1,100 @@
+.second-page {
+    background-color: #212107;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.s-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space between the h1 and p */
+    align-items: center;
+    text-align: justify;
+    max-width: 600px;
+    height: 100vh; /* Ensures the container takes the full height of the viewport */
+    padding: 20px; /* Adds spacing around the container */
+}
+
+.s-des h1 {
+    font-size: 50px;
+    color: white;
+    text-align: justify; /* Ensures the heading is centered */
+    margin: 0; /* Removes margin for tighter spacing */
+}
+
+.s-des p {
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.form-title h1 {
+    font-size: 30px;
+    color: #212107;
+    text-align: justify;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    
+}
+.s-form{
+    background:white;
+    border-radius:20px;
+    padding: 20px 50px 50px 50px;
+    margin:10px;
+}
+
+.td-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds gap between form elements */
+    max-width: 550px;
+    
+    margin: 0 auto; /* Centers the form horizontally */
+}
+
+.td-form input[type="text"] {
+    padding: 20px;
+    padding-left:50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    height:60px;
+    border-radius:50px;
+    background-color:rgb(228, 226, 226);
+    outline: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.td-form input[type="text"]::placeholder {
+    color:rgba(33, 33, 7, 0.37);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.td-form button {
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: #212107;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width:200px;
+    align-self: center;
+}
+
+.td-form button:hover {
+    background-color: #444;
+    transition: background-color 0.3s ease;
+}
